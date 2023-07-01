@@ -5,4 +5,4 @@
 4. pull FastApi machine test from gitHub
 5. make a Dockerfile with Dockercommands
 6. build project
-7. deploy succeed
+7. deploy succeed.
