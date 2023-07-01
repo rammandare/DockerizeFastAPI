@@ -6,4 +6,3 @@
 5. make a Dockerfile with Dockercommands
 6. build project
 7. deploy succeed
-
