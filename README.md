@@ -1,5 +1,4 @@
-# docker-fastapi-test
-
+# DockerizeFastAPI
 1. install docker on machine
 2. install docker compose on machine
 3. create directory in /
