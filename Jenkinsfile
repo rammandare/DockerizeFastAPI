@@ -16,5 +16,10 @@ pipeline {
                 sh 'sudo uvicorn app.main:app'
             }
         }
+        stage('test') {
+            steps {
+                sh 'echo"succeed"'
+            }
+        }
     }
 }
