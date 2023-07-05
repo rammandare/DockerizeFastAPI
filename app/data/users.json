@@ -1,52 +1,52 @@
 {
   "data": [
     {
-      "first_name": "Ram1",
-      "last_name": "Mandare1",
+      "first_name": "Ram",
+      "last_name": "Mandare",
       "age": 32
     },
     {
-      "first_name": "ram2",
-      "last_name": "mandare2",
+      "first_name": "rama",
+      "last_name": "mandare",
       "age": 32
-    },
-    {
-      "first_name": "ram3",
-      "last_name": "mandare3",
-      "age": 32
-    },
-    {
-      "first_name": "ram4",
-      "last_name": "mandare4",
-      "age": 32
-    },
-    {
-      "first_name": "Ram5",
-      "last_name": "mandare5",
-      "age": 32
-    },
-    {
-      "first_name": "string1",
-      "last_name": "strin2",
-      "age": 0
-    },
-    {
-      "first_name": "string1",
-      "last_name": "strin2",
-      "age": 0
     },
     {
       "first_name": "shyam",
+      "last_name": "mandare",
+      "age": 32
+    },
+    {
+      "first_name": "shyama",
+      "last_name": "mandare",
+      "age": 32
+    },
+    {
+      "first_name": "karan",
+      "last_name": "mandare",
+      "age": 32
+    },
+    {
+      "first_name": "bhagirath",
+      "last_name": "mandare",
+      "age": 0
+    },
+    {
+      "first_name": "vishal",
+      "last_name": "mandare",
+      "age": 0
+    },
+    {
+      "first_name": "sachin",
       "last_name": "Mandare",
       "age": 0
     },
     {
-      "first_name": "Ghanshyam",
+      "first_name": "chandu",
       "last_name": "Mandare",
       "age": 0
     },
     {
-      "first_name": "Vipin",
+      "first_name": "sandeep",
       "last_name": "Mandare",
       "age": 20
     },
@@ -56,13 +56,13 @@
       "age": 2
     },
     {
-      "first_name": "porush",
-      "last_name": "man",
+      "first_name": "mahi",
+      "last_name": "mandare",
       "age": 22
     },
     {
-      "first_name": "porush1",
-      "last_name": "man1",
+      "first_name": "arohi",
+      "last_name": "mandare",
       "age": 25
     }
 
