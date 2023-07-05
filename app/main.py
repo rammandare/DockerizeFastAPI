@@ -12,7 +12,7 @@ async def index():
     """
     Index route for our application
     """
-    return {"message": "Hello this API for machine Test)"}
+    return {"message": "Hello, API for Mchine Test)"}
 
 
 @app.post("/users", response_model=BaseResponse)
