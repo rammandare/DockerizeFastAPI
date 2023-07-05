@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'apt-get install python3 -y'
+                sh 'sudo apt-get install python3 -y'
                 sh 'sudo apt install python3-pip -y'
                 sh 'sudo python3 -m venv venv'
                 sh 'sudo pip install -r requirements.txt'
