@@ -1,7 +1,7 @@
 FROM python:3.8.10
 USER root
 RUN mkdir /fastapi
-WORKDIR /fastapi
+WORKDIR /var/lib/jenkins/workspace/docker-compose
 ENV PYTHONUNBUFFERED True
 COPY requirements.txt .
 COPY . .
