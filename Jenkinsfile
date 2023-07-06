@@ -9,9 +9,9 @@ pipeline {
         }
         stage('build') {
             steps {
-                dir('/var/lib/jenkins/workspace/docker-compose')}
+                dir('docker-compose' }
                 {
-              /*dir('docker-compose'*/ 
+              /*dir('/var/lib/jenkins/workspace/docker-compose')*/
               /*sh 'cd /var/lib/jenkins/workspace/docker-compose'*/
               sh 'sudo docker-compose up -d'
             }
