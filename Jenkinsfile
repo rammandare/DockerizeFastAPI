@@ -9,16 +9,11 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'sudo apt-get install python3 -y'
-                sh 'sudo apt install python3-pip -y'
-                sh 'sudo python3 -m venv venv'
-                sh 'sudo pip install -r requirements.txt'
-                sh 'sudo uvicorn app.main:app'
-            }
-        }
-        stage('test') {
-            steps {
-                sh 'echo"succeed"'
+                dir('/var/lib/jenkins/workspace/docker-compose')}
+                {
+              /*dir('docker-compose'*/ 
+              /*sh 'cd /var/lib/jenkins/workspace/docker-compose'*/
+              sh 'sudo docker-compose up -d'
             }
         }
     }
