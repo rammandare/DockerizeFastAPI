@@ -13,7 +13,7 @@ pipeline {
                     }
                 {
               sh 'sudo docker-compose up -d'
-                    sleep 20
+              sh 'sleep 20'
             }
         }
     }
