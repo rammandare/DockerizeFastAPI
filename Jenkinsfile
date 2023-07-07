@@ -15,7 +15,7 @@ pipeline {
               sh 'sudo docker stop $(sudo docker ps -a -q)'
               sh 'sudo docker rm $(sudo docker ps -a -q)'
               sh 'sudo docker rmi -f $(sudo docker images -q)'
-              sh 'sudo docker run -d --name prometheuscont -p 9090:9090 prom/prometheus'
+              sh 'docker run -d -p 9090:9090 -v /var/lib/jenkins/workspace/docker-compose/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus'
               sh 'sudo docker run -d --name grafanacont -p 3000:3000 grafana/grafana'
               sh 'sudo docker-compose up -d'
               sh 'sleep 20'
