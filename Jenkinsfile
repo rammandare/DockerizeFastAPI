@@ -12,14 +12,9 @@ pipeline {
                 dir('docker-compose') 
                     }
             {
-                sh 'docker stop $(docker ps -a -q)'
-            
-                {
-                        sh 'docker rm $(docker ps -a -q)'
-                }
-                {
-                        sh 'docker rmi -f $(docker images -q)'
-                }
+              sh 'docker stop $(docker ps -a -q)'
+              sh 'docker rm $(docker ps -a -q)'
+              sh 'docker rmi -f $(docker images -q)'
               sh 'sudo docker-compose up -d'
               sh 'sleep 20'
             }
