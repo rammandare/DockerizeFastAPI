@@ -5,9 +5,8 @@ WORKDIR /fastapi
 ENV PYTHONUNBUFFERED True
 COPY requirements.txt .
 COPY . .
-RUN apt-get install python3-pip
 RUN python3 -m venv venv
 RUN pip install -r requirements.txt
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python3-pip", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 EXPOSE 8000
 
