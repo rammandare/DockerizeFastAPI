@@ -11,7 +11,6 @@ pipeline {
             steps {
                 dir('docker-compose') 
                     }
-            {
                 {
                     /*sh 'sudo docker stop prometheuscont grafanacont'*/
                 }
