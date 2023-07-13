@@ -7,14 +7,11 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rammandare/DockerizeFastAPI.git']]])
             }
         }
-        stage('checkout') {
-            steps {
-                sh([for i in `docker ps | awk {'print $1'} | sed '1d'`;do docker stop $i;done && for i in `docker ps -a | awk {'print $1'} | sed '1d'`;do docker rm $i;done && for i in `docker images | awk {'print $3'} | sed '1d'`;do docker image rm $i;done])
-            }
-        }
+        
         stage('build') {
             steps {
-              
+
+              sh 'sudo sh loop.sh  
               sh 'sudo docker run -d -p 9090:9090 -v /var/lib/jenkins/workspace/api3/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus'
               sh 'sudo docker run -d -p 3000:3000 grafana/grafana'
               sh 'sudo docker-compose build'
