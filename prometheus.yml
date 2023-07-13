@@ -1,4 +1,4 @@
-# Load rules once and periodically evaluate them according to the global 'evalu
+# 1Load rules once and periodically evaluate them according to the global 'evalu
 rule_files:                                                                    
   # - "first_rules.yml"                                                        
   # - "second_rules.yml"                                                       
