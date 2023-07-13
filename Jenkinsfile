@@ -11,7 +11,7 @@ pipeline {
         stage('build') {
             steps {
 
-              sh 'cd /var/lib/jenkins/workspace/api3
+              sh 'cd /var/lib/jenkins/workspace/api3'
               sh 'sudo sh loop.sh'  
               sh 'sudo docker run -d -p 9090:9090 -v /var/lib/jenkins/workspace/api3/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus'
               sh 'sudo docker run -d -p 3000:3000 grafana/grafana'
